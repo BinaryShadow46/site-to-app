@@ -1,4 +1,4 @@
-# site to APP Converter
+# SITE to APP Converter
 
 A mobile-friendly web application that converts any website into an Android APK file. Works directly in your smartphone browser and can be deployed on GitHub Pages.
 
