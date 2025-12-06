@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website to APK Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-mobile-alt"></i> Website to APK Converter</h1>
+            <p class="subtitle">Convert any website into Android APK - No coding required!</p>
+        </header>
+
+        <main>
+            <div class="converter-section">
+                <div class="input-group">
+                    <label for="websiteUrl"><i class="fas fa-globe"></i> Website URL</label>
+                    <input type="url" id="websiteUrl" placeholder="https://example.com" required>
+                    <small>Enter the full URL including https://</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="appName"><i class="fas fa-font"></i> App Name</label>
+                    <input type="text" id="appName" placeholder="My Awesome App" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="packageName"><i class="fas fa-box"></i> Package Name</label>
+                    <input type="text" id="packageName" placeholder="com.example.myapp" required>
+                    <small>Format: com.company.appname (lowercase, dots only)</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="appIcon"><i class="fas fa-image"></i> App Icon URL (optional)</label>
+                    <input type="url" id="appIcon" placeholder="https://example.com/icon.png">
+                </div>
+
+                <div class="preview-section">
+                    <h3><i class="fas fa-eye"></i> App Preview</h3>
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div id="previewContent">
+                                <div class="app-header">
+                                    <span id="previewAppName">App Name</span>
+                                </div>
+                                <div class="website-preview">
+                                    <p>Your website will appear here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="generateBtn" class="generate-btn">
+                    <i class="fas fa-download"></i> Generate APK
+                </button>
+
+                <div class="info-box">
+                    <h3><i class="fas fa-info-circle"></i> How it works</h3>
+                    <ol>
+                        <li>Enter your website URL and app details</li>
+                        <li>We'll create a WebView Android app</li>
+                        <li>Download the APK file directly to your phone</li>
+                        <li>Install and use it like a native app!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2><i class="fas fa-star"></i> Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fast Conversion</h3>
+                        <p>Generate APK in seconds</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile"></i>
+                        <h3>Mobile Optimized</h3>
+                        <p>Works perfectly on smartphones</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Secure</h3>
+                        <p>No data stored on our servers</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-free-code-camp"></i>
+                        <h3>Free</h3>
+                        <p>Completely free to use</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> for developers | Works on GitHub Pages</p>
+            <p class="github-link">
+                <i class="fab fa-github"></i> 
+                <a href="https://github.com" target="_blank">View on GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
